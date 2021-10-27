@@ -13,7 +13,7 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-// Use apiRoutes
+// Use apiRoutes prefix al;lows us to remove /api form the URL
 app.use('/api', apiRoutes);
 
 
